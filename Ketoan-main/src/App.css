@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-message {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}

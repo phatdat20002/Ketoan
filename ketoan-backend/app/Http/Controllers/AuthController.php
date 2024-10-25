@@ -17,6 +17,10 @@ class AuthController extends Controller
             'password' => 'required|string|min:8',
         ]);
 
+        if (User::where('email', $validatedData['email'])->exists()) {
+            return response()->json(['message' => 'Email đã được sử dụng.'], 400);
+        }
+
         $user = User::create([
             'name' => $validatedData['name'],
             'email' => $validatedData['email'],
