@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-=======
 /* Đặt bố cục container của form */
->>>>>>> friend-repo/main
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('/src/image/brlogin.jpeg') no-repeat center center fixed;
+    background: url('./image/brlogin.jpeg') no-repeat center center fixed;
     background-size: cover;
   }
   .card {
@@ -27,7 +24,12 @@
     flex: 1;
     padding: 40px;
   }
- 
+  .bg-login-image {
+    background-image: url('./image/login.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+  }
   .form-control-user {
     border-radius: 1rem;
   }
@@ -39,7 +41,7 @@
     border-radius: 1rem;
   }
   .login-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
   }
@@ -48,7 +50,7 @@
     text-align: center;
   }
   .bg-login-image {
-    background-image: url('/src/image/login.jpeg');
+    background-image: url('./image/login.jpeg');
     width: 50%;
     background-size: cover;
     background-position: center;
@@ -80,18 +82,5 @@
     color: #ffffff;
     cursor: pointer;
     padding: 8px;
-  }.text-success {
-    color: #00b894;
   }
-  
-  .text-error {
-    color: #d63031;
-  }
-  .small{
-    font-size: 12px;
-    text-decoration: none;
-    padding-top: 12px;
-    display: block;
-  }
-  
   

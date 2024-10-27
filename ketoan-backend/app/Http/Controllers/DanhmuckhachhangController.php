@@ -58,4 +58,8 @@ class DanhmuckhachhangController extends Controller
         return response()->json(['message' => 'Khách hàng đã được xóa thành công'], 200);
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> friend-repo/main

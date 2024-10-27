@@ -29,7 +29,11 @@ function Login() {
       setErrorMessage(
         language === 'en' ? 'Login failed. Please check your credentials!' :
         language === 'vi' ? 'Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin!' :
+<<<<<<< HEAD
         '登录失败。请检查您的凭据！'
+=======
+        '登录失败。请检查您的凭据！' // Tiếng Trung
+>>>>>>> friend-repo/main
       );
     }
   };
@@ -58,7 +62,11 @@ function Login() {
                 <label htmlFor="Email" className="">
                   {language === 'en' ? 'Email' : 
                    language === 'vi' ? 'Email' : 
+<<<<<<< HEAD
                    '电子邮件'}
+=======
+                   '电子邮件'} {/* Tiếng Trung */}
+>>>>>>> friend-repo/main
                 </label>
                 <input
                   type="email"
@@ -76,7 +84,11 @@ function Login() {
                 <label htmlFor="exampleInputPassword">
                   {language === 'en' ? 'Password' : 
                    language === 'vi' ? 'Mật Khẩu' : 
+<<<<<<< HEAD
                    '密码'}
+=======
+                   '密码'} {/* Tiếng Trung */}
+>>>>>>> friend-repo/main
                 </label>
                 <input
                   type="password"
@@ -94,14 +106,22 @@ function Login() {
               <button type="submit" className="btn btn-primary btn-user btn-block">
                 {language === 'en' ? 'Login' : 
                  language === 'vi' ? 'Đăng Nhập' : 
+<<<<<<< HEAD
                  '登录'}
+=======
+                 '登录'} {/* Tiếng Trung */}
+>>>>>>> friend-repo/main
               </button>
             </form>
             <div className="text-center">
               <a className="small" href="/Register">
                 {language === 'en' ? 'Create an Account!' : 
                  language === 'vi' ? 'Tạo Tài Khoản!' : 
+<<<<<<< HEAD
                  '创建一个账户！'}
+=======
+                 '创建一个账户！'} {/* Tiếng Trung */}
+>>>>>>> friend-repo/main
               </a>
             </div> 
             {successMessage && <p className="text-success text-center mt-3">{successMessage}</p>}
