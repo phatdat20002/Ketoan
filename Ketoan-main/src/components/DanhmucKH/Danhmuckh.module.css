@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #4CAF50;
+    --danger-color: #f44336;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --light-color: #f9f9f9;
+    --dark-color: #555;
+    --white-color: #ffffff;
+    --gray-border: #ced4da;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 5px;
+    --font-size: 16px;
+    --padding: 10px 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.customer-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    font-family: 'Arial', sans-serif;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.thead {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.th, .td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-border);
+    font-size: 14px;
+    color: var(--dark-color);
+    transition: background-color 0.3s;
+}
+
+.th {
+    font-weight: bold;
+}
+
+.tr:hover {
+    background-color: rgba(108, 99, 255, 0.1);
+}
+
+.td {
+    background-color: var(--white-color);
+}
+
+.td:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.td button {
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.td button.edit {
+    background-color: #0984e3;
+}
+
+.td button.edit:hover {
+    background-color: #1976D2;
+}
+
+.td button.delete {
+    background-color: var(--danger-color);
+}
+
+.td button.delete:hover {
+    background-color: #d32f2f;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+}
+
+.modalContent input, 
+.selectCustomer {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--gray-border);
+    border-radius: var(--border-radius);
+    width: calc(100% - 20px);
+    font-size: var(--font-size);
+    transition: border-color 0.3s ease;
+}
+
+.modalContent input:focus,
+.selectCustomer:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.btn-save, 
+.btn-close, 
+.btnAdd, 
+.btnEdit, 
+.btnDelete, 
+.btnSave, 
+.btnClose, 
+.paginationButton {
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    cursor: pointer;
+    font-size: var(--font-size);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-save {
+    background-color: var(--secondary-color);
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+
+.btn-close {
+    background-color: var(--danger-color);
+}
+
+.btn-close:hover {
+    background-color: #ff6666;
+}
+
+.btnAdd {
+    background-color: #28a745;
+    margin-right: 10px;
+}
+
+.btnAdd:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+select {
+    padding: 10px;
+    border: 1px solid var(--gray-border);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+    margin-left: 10px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.btnEdit {
+    margin: 0 10px;
+    background-color: #007bff;
+}
+
+.btnEdit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btnDelete {
+    background-color: #dc3545;
+    margin: 0 4px;
+}
+
+.btnDelete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.btnSave {
+    background-color: var(--info-color);
+    margin-right: 10px;
+}
+
+.btnSave:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.btnClose {
+    background-color: #6c757d;
+}
+
+.btnClose:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.paginationButton {
+    background-color: #007bff;
+    margin: 5px;
+}
+
+.paginationButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.paginationButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
