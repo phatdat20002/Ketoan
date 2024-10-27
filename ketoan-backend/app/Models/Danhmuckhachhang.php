@@ -9,4 +9,8 @@ class Danhmuckhachhang extends Model
 {
     use HasFactory;
     protected $table = 'tdanhmuckhachhang';
+<<<<<<< HEAD
+    protected $fillable = ['cMaKhachHang','cTenKhachHang','cDiaChi','cTinhThanhPho','cMaSoThue','cDienThoai','cFax'];
+=======
+>>>>>>> friend-repo/main
 }

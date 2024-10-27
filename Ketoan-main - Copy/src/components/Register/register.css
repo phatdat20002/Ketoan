@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 /* Đặt bố cục container của form */
->>>>>>> friend-repo/main
 .login-container {
     display: flex;
     justify-content: center;
@@ -9,8 +6,9 @@
     height: 100vh;
     background: url('/src/image/brlogin.jpeg') no-repeat center center fixed;
     background-size: cover;
-  }
-  .card {
+}
+
+.card {
     display: flex;
     flex-direction: row;
     background: rgba(255, 255, 255, 0.9);
@@ -18,42 +16,45 @@
     border-radius: 8px;
     overflow: hidden; 
     width: 800px;
-  }
-  .card-body {
+}
+
+.card-body {
     display: flex;
     width: 100%;
-  }
-  .form-section {
+}
+
+.form-section {
     flex: 1;
-    padding: 40px;
-  }
- 
-  .form-control-user {
+    padding: 22px;
+}
+
+.form-control-user {
     border-radius: 1rem;
-  }
-  
-  .btn-user {
+}
+
+.btn-user {
     border-radius: 1rem;
-  }
-  .btn-google, .btn-facebook {
-    border-radius: 1rem;
-  }
-  .login-heading {
+}
+
+.login-heading {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
-  }
-  .text-center {
-    margin-bottom:  10px;
+}
+
+.text-center {
+    margin-bottom: 10px;
     text-align: center;
-  }
-  .bg-login-image {
+}
+
+.bg-login-image {
     background-image: url('/src/image/login.jpeg');
     width: 50%;
     background-size: cover;
     background-position: center;
-  }
-  .form-control-user {
+}
+
+.form-control-user {
     border-radius: 1rem;
     border: 1px solid #ced4da;
     padding: 10px 15px;
@@ -61,17 +62,20 @@
     transition: all 0.3s ease;
     width: 90%;
     margin-top: 12px;
-  }
-  .form-control-user:focus {
+}
+
+.form-control-user:focus {
     border-color: #007bff; 
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
     outline: none;
-  }
-  .form-group {
+}
+
+.form-group {
     position: relative;
     margin-bottom: 1.5rem;
-  }
-  .btn-user {
+}
+
+.btn-user {
     border-radius: 1rem;
     font-size: 14px;
     width: 100%;
@@ -80,18 +84,19 @@
     color: #ffffff;
     cursor: pointer;
     padding: 8px;
-  }.text-success {
+}
+
+.text-success {
     color: #00b894;
-  }
-  
-  .text-error {
+}
+
+.text-error {
     color: #d63031;
-  }
-  .small{
+}
+.small{
     font-size: 12px;
     text-decoration: none;
     padding-top: 12px;
     display: block;
-  }
-  
-  
+    color: #007bff;
+}

@@ -29,11 +29,7 @@ function Login() {
       setErrorMessage(
         language === 'en' ? 'Login failed. Please check your credentials!' :
         language === 'vi' ? 'Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin!' :
-<<<<<<< HEAD
-        '登录失败。请检查您的凭据！'
-=======
         '登录失败。请检查您的凭据！' // Tiếng Trung
->>>>>>> friend-repo/main
       );
     }
   };
@@ -45,7 +41,7 @@ function Login() {
 
   return (
     <div className="login-container">
-      <LanguageSwitcher onChange={setLanguage} /> {/* Thêm component LanguageSwitcher */}
+      <LanguageSwitcher onChange={setLanguage} />
       <div className="card o-hidden border-0 shadow-lg">
         <div className="card-body">
           <div className="bg-login-image"></div>
@@ -54,19 +50,15 @@ function Login() {
               <h1 className="h4 text-gray-900 mb-4">
                 {language === 'en' ? 'Welcome Back!' : 
                  language === 'vi' ? 'Chào Mừng Trở Lại!' : 
-                 '欢迎回来！'}  {/* Tiếng Trung */}
+                 '欢迎回来！'} 
               </h1>
             </div>
             <form className="user" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="Email" className="">
+                <label htmlFor="Email">
                   {language === 'en' ? 'Email' : 
                    language === 'vi' ? 'Email' : 
-<<<<<<< HEAD
-                   '电子邮件'}
-=======
                    '电子邮件'} {/* Tiếng Trung */}
->>>>>>> friend-repo/main
                 </label>
                 <input
                   type="email"
@@ -84,11 +76,7 @@ function Login() {
                 <label htmlFor="exampleInputPassword">
                   {language === 'en' ? 'Password' : 
                    language === 'vi' ? 'Mật Khẩu' : 
-<<<<<<< HEAD
-                   '密码'}
-=======
                    '密码'} {/* Tiếng Trung */}
->>>>>>> friend-repo/main
                 </label>
                 <input
                   type="password"
@@ -106,22 +94,14 @@ function Login() {
               <button type="submit" className="btn btn-primary btn-user btn-block">
                 {language === 'en' ? 'Login' : 
                  language === 'vi' ? 'Đăng Nhập' : 
-<<<<<<< HEAD
-                 '登录'}
-=======
                  '登录'} {/* Tiếng Trung */}
->>>>>>> friend-repo/main
               </button>
             </form>
             <div className="text-center">
               <a className="small" href="/Register">
                 {language === 'en' ? 'Create an Account!' : 
                  language === 'vi' ? 'Tạo Tài Khoản!' : 
-<<<<<<< HEAD
-                 '创建一个账户！'}
-=======
                  '创建一个账户！'} {/* Tiếng Trung */}
->>>>>>> friend-repo/main
               </a>
             </div> 
             {successMessage && <p className="text-success text-center mt-3">{successMessage}</p>}
@@ -132,5 +112,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;

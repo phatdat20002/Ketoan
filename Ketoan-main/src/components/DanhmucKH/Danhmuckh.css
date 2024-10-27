@@ -1,0 +1,210 @@
+.customer-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+<<<<<<< HEAD
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+=======
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+>>>>>>> friend-repo/main
+}
+
+h2 {
+    text-align: center;
+<<<<<<< HEAD
+    font-size: 26px;
+    font-weight: 600;
+=======
+    font-size: 24px;
+>>>>>>> friend-repo/main
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+<<<<<<< HEAD
+    padding: 12px;
+    margin: 5px 10px 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: calc(50% - 20px);
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+=======
+    padding: 10px;
+    margin: 5px 10px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(50% - 20px);
+>>>>>>> friend-repo/main
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+<<<<<<< HEAD
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+=======
+    transition: background-color 0.3s;
+>>>>>>> friend-repo/main
+}
+
+button:hover {
+    opacity: 0.9;
+<<<<<<< HEAD
+    transform: scale(1.05);
+=======
+>>>>>>> friend-repo/main
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+<<<<<<< HEAD
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #555;
+=======
+    background-color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+>>>>>>> friend-repo/main
+}
+
+th {
+    color: #333;
+<<<<<<< HEAD
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #fafafa;
+=======
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+>>>>>>> friend-repo/main
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+>>>>>>> friend-repo/main
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+<<<<<<< HEAD
+    background-color: #f9f9f9;
+=======
+>>>>>>> friend-repo/main
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+<<<<<<< HEAD
+    background-color: #e0e0e0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+}
+
+.btn-close {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close:hover {
+    background-color: #ff6666;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+=======
+    background-color: #f1f1f1;
+>>>>>>> friend-repo/main
+}
